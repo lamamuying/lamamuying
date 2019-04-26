@@ -1,0 +1,100 @@
+.container {
+  padding: 20rpx;
+  margin: 20rpx;
+  background: #fff;
+}
+.container .haveCard {
+  width: 100%;
+}
+.container .haveCard .flex-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20rpx;
+  background: #FF7D91;
+  border-radius: 10rpx;
+}
+.container .haveCard .flex-item image {
+  margin: 0 20rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+.container .haveCard .flex-item .info {
+  width: 80%;
+  height: 200rpx;
+}
+.container .haveCard .flex-item .info .cardName {
+  color: #fff;
+  font-size: 32rpx;
+  padding-top: 20rpx;
+}
+.container .haveCard .flex-item .info .cardStyle {
+  margin-top: -10rpx;
+  color: #fff;
+  font-size: 24rpx;
+}
+.container .haveCard .flex-item .info .cardNum {
+  color: #fff;
+  font-size: 36rpx;
+}
+.container .cardInfor {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+  -webkit-align-items: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding-left: 20rpx;
+}
+.container .cardInfor text:first-child {
+  width: 25%;
+}
+.container .detail {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20rpx 0;
+}
+.container .detail .revise {
+  width: 20%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 30rpx;
+  border: 2rpx solid #ececec;
+  border-radius: 30rpx;
+}
+.container .detail .delete {
+  width: 20%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 30rpx;
+  border: 2rpx solid #ececec;
+  border-radius: 30rpx;
+}
+

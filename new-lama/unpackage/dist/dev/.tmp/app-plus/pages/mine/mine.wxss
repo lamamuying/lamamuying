@@ -1,0 +1,182 @@
+.place {
+
+  margin-top: var(--status-bar-height);
+
+  height: 100rpx;
+}
+.status {
+  width: 100%;
+  height: 0;
+
+  height: var(--status-bar-height);
+
+  background-color: #ff4965;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.banner {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 70rpx 0 35rpx 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF4965), to(#ff677f));
+  background-image: -o-linear-gradient(top, #FF4965, #ff677f);
+  background-image: linear-gradient(to bottom, #FF4965, #ff677f);
+  background-color: #ff8497;
+}
+.banner .image {
+  width: 30%;
+  margin-top: 14%;
+  margin-left: 12%;
+}
+.banner .image .banner-img {
+  border-radius: 50%;
+  width: 150rpx;
+  height: 150rpx;
+}
+.banner .banner-title {
+  padding-left: 10rpx;
+  font-size: 34rpx;
+  overflow: hidden;
+  height: 60rpx;
+  color: #fff;
+}
+.banner .unumn {
+  background: none;
+  margin-top: 16%;
+  width: 70%;
+  height: 20%;
+  text-align: left;
+}
+.banner .banner-vip {
+  margin-top: 20rpx;
+  width: 37%;
+  height: 50rpx;
+  padding: 0 4rpx;
+  line-height: 50rpx;
+  font-size: 24rpx;
+  color: #ff4965;
+  background: #fff;
+  border-radius: 20rpx;
+  text-align: center;
+}
+.mine-order {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #fff;
+  padding: 10rpx 20rpx;
+  border-bottom: 1px solid #EEEEEE;
+}
+.order {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  padding: 20rpx;
+}
+.order .text {
+  text-align: center;
+}
+.order .text image {
+  width: 70rpx;
+  height: 70rpx;
+}
+.ad {
+  margin: 20rpx 0;
+  width: 100%;
+}
+.ad image {
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 10rpx;
+}
+.uni-column {
+  padding: 0 28rpx;
+  background: #fff;
+}
+.flex-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #ececec;
+  margin-top: 10px;
+}
+.flex-item .mine-text {
+  padding-left: 20rpx;
+  font-size: 32rpx;
+}
+.flex-item image {
+  position: absolute;
+  right: 20px;
+  width: 30rpx;
+  height: 30rpx;
+}
+.btn {
+  width: 70%;
+  margin-top: 50rpx;
+  border-radius: 40rpx;
+  background: #ff4965;
+  color: #fff;
+}
+/* 添加修改样式 */
+.static {
+
+  padding-top: var(--status-bar-height);
+  background: #ff4965;
+
+}
+.mine-size {
+  padding: 10rpx 28rpx;
+  padding-bottom: 0;
+  background: #fff;
+}
+.apply {
+  margin-top: 18%;
+  width: 40%;
+  height: 60rpx;
+  border-radius: 50px 0 0 50px;
+  background: #444444;
+  color: #f1e0bc;
+  font-size: 28rpx;
+  position: relative;
+}
+.aui-member-sign ._span {
+  font-size: 30rpx;
+  display: block;
+}
+.appl {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #444444;
+  color: #f1e0bc;
+  font-size: 24rpx;
+  height: 80rpx;
+  width: 220rpx;
+  padding: 0;
+  border-radius: 50px 0 0 50px;
+  margin-top: 15%;
+  padding-left: 20rpx;
+}
+

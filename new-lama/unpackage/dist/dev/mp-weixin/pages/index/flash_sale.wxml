@@ -1,0 +1,2 @@
+<import src="./flash_sale.vue.wxml" />
+    <template is="1a82a90d" data="{{ ...$root['0'], $root }}"/>

@@ -1,0 +1,71 @@
+.uni-media-list-body {
+  height: auto;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.uni-media-list-body .price {
+  display: block;
+  line-height: 60rpx;
+  color: #999;
+}
+.uni-media-list-body .price text {
+  text-decoration: line-through;
+}
+.uni-media-list-text-top {
+  height: 74rpx;
+  font-size: 28rpx;
+}
+.uni-media-list-text-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.uni-media-list-text-bottom .specail {
+  width: 240rpx;
+  border-radius: 12rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #D20806;
+  margin-top: 2%;
+}
+.uni-media-list-text-bottom .specail .spel {
+  width: 70rpx;
+  background: #FF4660;
+  height: 50rpx;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  margin-right: 14rpx;
+  border-radius: 12rpx;
+}
+.uni-media-list {
+  padding: 20rpx 40rpx;
+}
+.uni_firm {
+  width: 35%;
+  height: 220rpx;
+  margin-right: 9px;
+}
+.uni-list::before {
+  height: 0;
+}
+.uni-list:after {
+  margin: 0 20rpx;
+  right: 28rpx;
+}
+.uni-list-cell::after {
+  margin: 0 20rpx;
+  right: 28rpx;
+}
+

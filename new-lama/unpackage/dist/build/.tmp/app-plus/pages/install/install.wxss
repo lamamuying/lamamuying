@@ -1,0 +1,20 @@
+.insBorder {
+  border-bottom: 2rpx solid #ececec;
+  line-height: 100rpx;
+}
+.insBorder image {
+  position: absolute;
+  right: 30rpx;
+  width: 20rpx;
+  height: 24rpx;
+  margin-top: 42rpx;
+}
+uni-view {
+  font-size: 32rpx;
+}
+.btn {
+  width: 70%;
+  margin-top: 400rpx;
+  border-radius: 40rpx;
+}
+

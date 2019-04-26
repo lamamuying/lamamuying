@@ -1,0 +1,247 @@
+.hotArticle {
+  background: #fff;
+}
+.hotArticle .healthApp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  margin: 10rpx 0;
+  padding: 10rpx 20rpx;
+}
+.hotArticle .hotList {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20rpx;
+  overflow: hidden;
+}
+.hotArticle .hotList .list:last-child {
+  margin: 0;
+}
+.hotArticle .hotList .list {
+  width: 48%;
+  padding-bottom: 20rpx;
+}
+.hotArticle .hotList .list image {
+  width: 100%;
+  height: 240rpx;
+}
+.hotArticle .hotList .list .video {
+  width: 100%;
+  height: 300rpx;
+}
+.hotArticle .hotList .list uni-video {
+  width: 170px;
+  height: 140px;
+}
+.hotArticle .hotList .list video {
+  width: 170px;
+  height: 140px;
+}
+.hotArticle .hotList .list .title {
+  text-indent: 10rpx;
+  height: 100rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  color: #000;
+  overflow: hidden;
+}
+.hotArticle .hotList .list .time {
+  font-size: 28rpx;
+  color: #333;
+  overflow: hidden;
+  height: 50px;
+  text-indent: 20rpx;
+}
+.hotArticle .hotList .list .comment {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10rpx;
+  color: #999;
+}
+.place {
+
+  margin-top: var(--status-bar-height);
+
+  height: 100rpx;
+}
+
+.status {
+  width: 100%;
+  height: 0;
+
+  height: var(--status-bar-height);
+
+  background-color: #ff4965;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.flex-item {
+  width: 33.3%;
+  height: 200rpx;
+  text-align: center;
+  line-height: 200rpx;
+}
+.flex-item-V {
+  width: 100%;
+  height: 150rpx;
+  text-align: center;
+  line-height: 150rpx;
+}
+.uni-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #fff;
+}
+.uni-flex .text {
+  margin-left: 110rpx;
+  margin-top: 110rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: left;
+  font-size: 32rpx;
+}
+.uni-flex .text_talk {
+  width: 180rpx;
+  height: 0px;
+  margin-left: 60rpx;
+  margin-top: -60rpx;
+  font-size: 32rpx;
+}
+.uni-flex .text_take {
+  width: 200rpx;
+  height: 0;
+  margin-left: 60rpx;
+  margin-top: 48rpx;
+  font-size: 24rpx;
+  color: #656565;
+}
+.swiper-view .swiper {
+  width: 100%;
+  height: 360rpx;
+}
+.swiper-view .swiper image {
+  width: 100%;
+  height: 360rpx;
+}
+.swiper-view .keep-out {
+  width: 100%;
+  height: 30rpx;
+  border-radius: 100% 100% 0 0;
+  margin-top: -15rpx;
+  position: absolute;
+}
+.notice_bg {
+  width: 15%;
+  margin-left: 10rpx;
+  padding-top: 10rpx;
+  overflow: hidden;
+}
+.notice_bg ._img {
+  width: 100%;
+}
+.notice_content {
+  width: 75%;
+  height: 50rpx;
+  font-size: 28rpx;
+  margin-right: 5%;
+  overflow: hidden;
+  margin-top: 10rpx;
+  padding-left: 20rpx;
+}
+.uni-swiper-msg {
+  padding: 0 !important;
+}
+.flex-text {
+  width: 340rpx;
+  height: 340rpx;
+  background: #fff;
+  padding-top: 20rpx;
+}
+.flex-text text {
+  display: block;
+}
+.growth {
+  background: #fff;
+  -webkit-box-pack: unset;
+  -webkit-justify-content: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+.growth image {
+  width: 340rpx;
+  height: 340rpx;
+  margin-left: 24rpx;
+}
+.more {
+  width: 100%;
+  height: 80rpx;
+  background: #FAF0E7;
+  margin: auto;
+}
+.more image {
+  width: 70rpx;
+  height: 70rpx;
+  float: left;
+  margin-top: 10rpx;
+}
+.more .text {
+  font-size: 32rpx;
+}
+.container {
+  width: 100%;
+  height: 2200rpx;
+}
+.swiper-tab-list {
+  font-size: 32rpx;
+}
+.uni-tab-bar .active {
+  color: #FF4965;
+  font-size: 32rpx;
+  border-bottom: 2px solid #FF4965;
+  padding-bottom: 20rpx;
+}
+/* 添加修改样式  底部文章trabbar */
+.swiper-tab-list {
+  margin-right: 20rpx;
+}
+

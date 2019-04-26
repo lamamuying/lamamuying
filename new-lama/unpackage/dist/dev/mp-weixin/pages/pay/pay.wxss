@@ -1,0 +1,339 @@
+/* 遮罩层 */
+.uni-mask {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+/* 弹出层形式的广告 */
+.uni-banner {
+  width: 100%;
+  height: 600rpx;
+  position: fixed;
+  left: 50%;
+  bottom: -27%;
+  background: #FFF;
+  z-index: 99;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+/* 添加修改样式 */
+.uni-icon {
+  font-size: 30px;
+  color: #333;
+}
+.btn {
+  margin: 0 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+.btn .price {
+  width: 100%;
+  text-align: center;
+  color: #333;
+  font-weight: bolder;
+  font-size: 58rpx;
+}
+.btn .information {
+  width: 100%;
+}
+.btn .information .pay {
+  color: #999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 2rpx solid #ececec;
+}
+.btn .submit {
+  position: absolute;
+  bottom: 80rpx;
+  width: 200rpx;
+  line-height: 70rpx;
+  border-radius: 10rpx;
+  background: red;
+  color: #fff;
+  text-align: center;
+}
+.payMoney {
+  width: 160rpx;
+  font-size: 26rpx;
+  margin: 0 30rpx;
+  color: #F96400;
+  border: 2rpx solid #F96400;
+  border-radius: 30rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.place {
+
+  height: 100rpx;
+}
+.attr-pop-box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 8;
+  bottom: 0;
+  /* display: none; */
+}
+.attr-pop {
+  width: 92%;
+  padding: 4%;
+  background: #fff;
+  position: fixed;
+  z-index: 9;
+  bottom: 0rpx;
+  bottom: calc(0rpx + constant(safe-area-inset-bottom));
+  bottom: calc(0rpx + env(safe-area-inset-bottom));
+  overflow-y: auto;
+}
+.attr-pop .close {
+  position: absolute;
+  width: 48rpx;
+  height: 48rpx;
+  right: 20rpx;
+  overflow: hidden;
+  top: 31.25rpx;
+}
+.attr-pop .close .icon {
+  width: 48rpx;
+  height: 48rpx;
+}
+.flex-item {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #ff5b50), color-stop(70%, #ff495a));
+  background: -o-linear-gradient(bottom, #ff5b50 30%, #ff495a 70%);
+  background: linear-gradient(to top, #ff5b50 30%, #ff495a 70%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20rpx 0;
+}
+.flex-item .uni-column {
+  text-align: left;
+}
+.flex-item .uni-column .wait {
+  font-size: 32rpx;
+  color: #fff;
+}
+.flex-item .waitImge {
+  width: 120rpx;
+  height: 120rpx;
+}
+.address {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20rpx;
+  background: #fff;
+}
+.address .address-logo {
+  width: 70rpx;
+  height: 70rpx;
+  margin-right: 20rpx;
+}
+.address .add {
+  text-align: left;
+  width: 80%;
+}
+.goodsList {
+  margin-top: 20rpx;
+  background: #fff;
+  padding: 20rpx;
+}
+.goodsList .goods {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20rpx;
+}
+.goodsList .goods .goods_image {
+  width: 30%;
+  height: 140rpx;
+  margin-right: 20rpx;
+  border-radius: 15rpx;
+}
+.goodsList .goods .message {
+  width: 80%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+  -webkit-align-items: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+.goodsList .goods .message .goodsName {
+  line-height: 40rpx;
+  height: 80rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+  margin-right: 20rpx;
+}
+.goodsList .goods .message .size {
+  color: #999;
+  font-size: 26rpx;
+}
+.goodsList .goods .price {
+  text-align: right;
+  font-size: 26rpx;
+}
+.goodsList .refund {
+  width: 120rpx;
+  font-size: 24rpx;
+  border: 2rpx solid #ccc;
+  border-radius: 30rpx;
+  line-height: 50rpx;
+  text-align: center;
+  margin-left: 83%;
+  margin-bottom: 20rpx;
+}
+.goodsList .goodsMoney {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 26rpx;
+  color: #666;
+}
+.goodsList .goodsMoney .over {
+  width: 92%;
+  text-align: right;
+}
+.orderMessage {
+  margin-top: 20rpx;
+  background: #fff;
+  padding: 20rpx 0;
+}
+.orderMessage .info {
+  width: 90%;
+  line-height: 40rpx;
+  border-left: 4rpx solid #f96400;
+  text-indent: 10rpx;
+  margin-left: 20rpx;
+}
+.orderMessage .number {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10rpx 20rpx;
+  color: #999;
+}
+.orderMessage .number .num {
+  text-align: left;
+}
+.payStyle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.payStyle .close {
+  width: 160rpx;
+  font-size: 24rpx;
+  border: 2rpx solid #ccc;
+  border-radius: 30rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+.orderNum {
+  width: 26%;
+}
+.btn {
+  width: 40%;
+  background: #ff4965;
+  color: #fff;
+}
+

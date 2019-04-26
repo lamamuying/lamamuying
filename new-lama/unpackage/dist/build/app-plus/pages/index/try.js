@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"home_conter { -webkit-box-pack: center !important; -webkit-justify-content: center !important; -ms-flex-pack: center !important; justify-content: center !important; }\n.",[1],"home_conter .",[1],"try { margin-left: ",[0,120],"; color: #f5200a; }\n.",[1],"uni-product { padding: ",[0,10],"; margin: ",[0,10],"; background: #FFFFFF; }\n",],undefined,{path:"./pages/index/try.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index/try.wxml') } }));

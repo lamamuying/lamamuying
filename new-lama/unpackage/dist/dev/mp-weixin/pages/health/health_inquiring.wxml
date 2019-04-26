@@ -1,0 +1,2 @@
+<import src="./health_inquiring.vue.wxml" />
+    <template is="42f7e5b4" data="{{ ...$root['0'], $root }}"/>

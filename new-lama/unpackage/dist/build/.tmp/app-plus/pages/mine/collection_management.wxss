@@ -1,0 +1,137 @@
+
+uni-checkbox {
+	padding-left: 30rpx;
+}
+.bg_glx {
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	bottom: 0;
+	padding: 4% 16rpx;
+	background: #fff;
+	border-top: 2rpx solid #eee;
+}
+.bg_glx .delete {
+	position: absolute;
+	right: 40rpx;
+	top: 15%;
+	font-size: 32rpx;
+	background: #FF4965;
+	color: #fff;
+	border-radius: 10rpx;
+}
+.uni-list-cell {
+	margin-right: 20rpx;
+}
+.uni-media-list {
+	width: 95%;
+}
+.uni-list::before {
+	height: 0;
+}
+.uni-media-list-logo {
+	width: 200rpx;
+	height: 200rpx;
+}
+.uni-media-list-text-top {
+	height: 74rpx;
+	font-size: 32rpx;
+	overflow: hidden;
+}
+.uni-media-list-body {
+	height: auto;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+.uni-media-list-text-bottom {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+
+/* 添加修改样式 */
+.comment {
+	padding: 0 20rpx;
+}
+
+
+.Menubox63 {
+	width: 100%;
+	background: #fff;
+	height: 100rpx;
+	margin-bottom: 5rpx;
+}
+.Contentbox63 {
+	clear: both;
+	height: auto;
+	width: 100%;
+	clear: both;
+}
+.uni-common-mt {
+	margin-top: 0px;
+	padding-top: 10rpx;
+}
+.segmented-control-item.button {
+	font-size: 32rpx;
+}
+.segmented-control {
+	width: 60%;
+	border-radius: 30rpx;
+	margin-left: 15%;
+}
+uni-image {
+	width: 50rpx;
+	height: 50rpx;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+}
+uni-button {
+	background: none;
+	position: absolute;
+	z-index: 10;
+	right: 12%;
+	top: 12rpx;
+}
+uni-button:after {
+	border: none;
+}
+.management {
+	position: absolute;
+	top: 0;
+	right: 30rpx;
+	background: none;
+	color: #FF4965;
+}
+.uni-list-cell {
+	margin: 0 22rpx;
+}
+.uni-media-list {
+	width: 95%;
+	padding: 50rpx 30rpx;
+}
+.uni-list::before {
+	height: 0;
+}
+.uni-media-list-logo {
+	width: 200rpx;
+	height: 160rpx;
+}
+.uni-media-list-text-top {
+	height: 74rpx;
+	font-size: 32rpx;
+	overflow: hidden;
+}
+

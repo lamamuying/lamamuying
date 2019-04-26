@@ -1,0 +1,61 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* uni-view{font-size: 12px;} */
+.uni-comment-top .name{font-size:32rpx;color: #333;}
+.uni-comment-date .date{font-size: 24rpx;color: #cac8c9;}
+.uni-comment-content{font-size:28rpx;}
+.comment{width:70%;border:2rpx solid #d5dde6;margin:20rpx;display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-justify-content: space-around;-ms-flex-pack: distribute;justify-content: space-around;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;}
+.sub{position:absolute;right:20rpx;background:#FF4965;font-size:32rpx;color:#fff;}
+.uni-comment-list{border-bottom:2rpx solid #EBEBEB;}
+.uni-comment-face{width:18%;height:122rpx;}
+/* 覆盖修改样式 */
+.uni-padding-wrap{background:#fff;}
+.uni-comment-list:last-child{border-bottom: none;}
+

@@ -1,0 +1,165 @@
+view {
+	font-size: 28upx;
+}
+
+/* 文字相关 */
+.lama-center {
+	justify-content: center;
+	text-align: center;
+}
+
+.lama-h1 {
+	font-size: 80upx;
+	line-height: 1.8em;
+}
+
+.lama-h2 {
+	font-size: 60upx;
+	line-height: 1.8em;
+}
+
+.lama-h3 {
+	font-size: 45upx;
+	line-height: 1.8em;
+}
+
+.lama-h4 {
+	font-size: 32upx;
+	line-height: 1.8em;
+}
+
+.lama-h5 {
+	font-size: 30upx;
+	line-height: 1.8em;
+}
+
+.lama-text {
+	font-size: 28upx;
+	line-height: 2.2em;
+}
+
+.lama-text image {
+	width: 100%;
+	margin: 20upx 0;
+}
+
+.lama-text-small {
+	font-size: 24upx;
+	line-height: 1.8em;
+}
+
+.lama-line-through {
+	text-decoration: line-through;
+}
+
+.lama-italic {
+	font-style: italic;
+}
+
+.lama-indent {
+	text-indent: 2em;
+}
+
+.lama-blod {
+	font-weight: 700;
+}
+
+.lama-ellipsis {
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/* 栅格布局 */
+.lama-flex {
+	display: flex !important;
+}
+
+.lama-rows {
+	display: flex;
+	flex-direction: row !important;
+}
+
+.lama-columns {
+	display: flex;
+	flex-direction: column !important;
+}
+
+.lama-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.lama-nowrap {
+	display: flex;
+	flex-wrap: nowrap !important;
+}
+
+.lama-space-between {
+	display: flex;
+	justify-content: space-between !important;
+}
+
+/* 背景颜色 */
+.lama-bg-red {
+	background: #FF4965;
+}
+
+.lama-bg-green {
+	background: #09BB07;
+}
+
+.lama-bg-blue {
+	background: #10AEFF;
+}
+
+/* 横向广告组 */
+.lama-box-banner {
+	padding: 20upx 0;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	background: #FFF;
+}
+
+.lama-box-banner .garce-items {
+	width: 25%;
+	border-right: 1px solid #F1F2F3;
+	justify-content: center;
+	line-height: 1.4em;
+	text-align: center；
+}
+
+.lama-box-banner .garce-items:last-child {
+	border: none;
+}
+
+.lama-box-banner .garce-items view {
+	justify-content: center;
+	text-align: center;
+}
+
+.lama-box-banner .garce-items text text {
+	font-size: 22rupx;
+	color: #666;
+}
+
+.lama-box-banner .line1 {
+	font-size: 36upx;
+	line-height: 60upx;
+	overflow: hidden;
+}
+
+.lama-box-banner .line1 text {
+	font-size: 26upx;
+	color: #666;
+	line-height: 65upx;
+	margin-left: 5upx;
+}
+
+.lama-box-banner .line2 {
+	font-size: 26upx;
+	color: #666;
+	line-height: 32upx;
+}

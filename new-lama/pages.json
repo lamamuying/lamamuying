@@ -1,0 +1,361 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+ 		// 首页
+		{
+			"path": "pages/leadPage/lead",
+			"style": {
+				"navigationBarTitleText": "启动页",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/leadPage/guide",
+			"style": {
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "商城首页",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"titleNView": false
+			}
+		},
+
+		{
+			"path": "pages/index/notice",
+			"style": {
+				"navigationBarTitleText": "头条"
+			}
+		},
+		{
+			"path": "pages/index/flash_sale",
+			"style": {
+				"navigationBarTitleText": "辣妈限时抢购"
+			}
+		},
+		{
+			"path": "pages/index/specials",
+			"style": {
+				"navigationBarTitleText": "特价商品"
+			}
+		},
+		{
+			"path": "pages/index/try",
+			"style": {
+				"navigationBarTitleText": "零元试用"
+			}
+		},
+		// 商品分类页面
+		{
+			"path": "pages/goods/goods_class",
+			"style": {
+				"navigationBarTitleText": "商品分类"
+			}
+		},
+		{
+			"path": "pages/goods/goods_list",
+			"style": {
+				"navigationBarTitleText": "商品列表",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/goods/goods_detail",
+			"style": {
+				"navigationBarTitleText": "商品详情页",
+				"app-plus": {
+					//"titleNView": false //禁用原生导航栏
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		},
+		// 购物车
+		{
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		// 科学育儿
+		{
+			"path": "pages/health/health_inquiring",
+			"style": {
+				// "navigationBarTitleText": "健康问诊",
+				"app-plus": {
+					"titleNView": false //禁用原生导航栏
+				}
+			}
+		},
+		{
+			"path": "pages/article/article",
+			"style": {
+				"navigationBarTitleText": "育儿百科"
+			}
+		},
+		{
+			"path": "pages/article/article_detail",
+			"style": {
+				"navigationBarTitleText": "育儿百科详情页"
+			}
+		},
+		{
+		    "path" : "pages/health/child_video",
+		    "style" : {
+		        "navigationBarTitleText": "亲子视频"
+		    }
+		},
+		{
+			"path": "pages/article/comment",
+			"style": {
+				"navigationBarTitleText": "评论"
+			}
+		},
+		{
+			"path": "pages/article/article_list",
+			"style": {
+				"navigationBarTitleText": "文章列表",
+				"titleNView": false
+			}
+		},
+		// 我的个人信息
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"app-plus": {
+					"titleNView": false //禁用原生导航栏
+				}
+			}
+		},
+		{
+			"path": "pages/mine/personal_data",
+			"style": {
+				"navigationBarTitleText": "个人信息"
+			}
+		},
+		{
+			"path": "pages/mine/sales",
+			"style": {
+				"navigationBarTitleText": "成为辣妈Plus"
+			}
+		},
+		{
+			"path": "pages/mine/wallet",
+			"style": {
+				"navigationBarTitleText": "我的收益"
+			}
+		},
+		{
+			"path": "pages/mine/collection",
+			"style": {
+				"navigationBarTitleText": "我的收藏"
+			}
+		},
+		{
+			"path": "pages/mine/collection_management",
+			"style": {
+				"navigationBarTitleText": "收藏管理"
+			}
+		},
+		//1
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},
+		{
+			"path": "pages/order/receive_goods",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		{
+			"path": "pages/mine/about_mom",
+			"style": {
+				"navigationBarTitleText": "关于辣妈"
+			}
+		},
+		{
+			"path": "pages/mine/feedback",
+			"style": {
+				"navigationBarTitleText": "意见反馈"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/password_change/password_change",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/password_change/password_forget",
+			"style": {
+				"navigationBarTitleText": "忘记密码"
+			}
+		},
+		{
+			"path": "pages/mine/code",
+			"style": {
+				"navigationBarTitleText": "我的二维码"
+			}
+		},
+		{
+			"path": "pages/mine/order_Plus",
+			"style": {
+				"navigationBarTitleText": "Plus会员礼品领取地址"
+			}
+		},
+		// 我新添加
+		{
+			"path": "pages/addAdress/adress",
+			"style": {
+				"navigationBarTitleText": "添加收货地址"
+			}
+		},
+		{
+			"path": "pages/addAdress/address_management",
+			"style": {
+				"navigationBarTitleText": "编辑收货地址"
+			}
+		},
+		{
+			"path": "pages/pay/pay",
+			"style": {
+				"navigationBarTitleText": "您需要支付"
+			}
+		},
+		{
+			"path": "pages/order/firm_order",
+			"style": {
+				"navigationBarTitleText": "确认订单"
+			}
+		},
+		{
+			"path": "pages/goods/evaluate",
+			"style": {
+				"navigationBarTitleText": "商品评论"
+			}
+		},
+		// 添加提现
+		{
+			"path": "pages/extract/extract",
+			"style": {
+				"navigationBarTitleText": "零钱提现"
+			}
+		},
+		{
+			"path": "pages/extract/extract_apply",
+			"style": {
+				"navigationBarTitleText": "零钱提现"
+			}
+		},
+		{
+			"path": "pages/extract/extract_state",
+			"style": {
+				"navigationBarTitleText": "零钱提现状态"
+			}
+		},
+		{
+			"path": "pages/extract/extract_list",
+			"style": {
+				"navigationBarTitleText": "提现列表"
+			}
+		},
+		{
+			"path": "pages/addCard/addCard",
+			"style": {
+				"navigationBarTitleText": "添加银行卡"
+			}
+		},
+		{
+			"path": "pages/addCard/addCard_finish",
+			"style": {
+				"navigationBarTitleText": "银行卡信息"
+			}
+		},
+		{
+			"path": "pages/addCard/addCard_detail",
+			"style": {
+				"navigationBarTitleText": "银行卡详细信息"
+			}
+		},
+		{
+			"path": "pages/addCard/card_holding",
+			"style": {
+				"navigationBarTitleText": "银行卡信息"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#FF4965",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/index_r7_c11.png",
+				"selectedIconPath": "static/images/index_r7_c1.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/goods/goods_class",
+				"iconPath": "static/images/index_r8_c7.png",
+				"selectedIconPath": "static/images/index_r8_c72.png",
+				"text": "商品分类"
+			},
+			{
+				"pagePath": "pages/health/health_inquiring",
+				"iconPath": "static/images/index_r9_c9.png",
+				"selectedIconPath": "static/images/index_r9_c92.png",
+				"text": "科学育儿"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/images/gw.png",
+				"selectedIconPath": "static/images/gw1.png",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/images/index_r10_c11.png",
+				"selectedIconPath": "static/images/index_r10_04.png",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "辣妈母婴",
+		"navigationBarBackgroundColor": "#ff4965",
+		"backgroundColor": "#ff4965"
+	}
+}

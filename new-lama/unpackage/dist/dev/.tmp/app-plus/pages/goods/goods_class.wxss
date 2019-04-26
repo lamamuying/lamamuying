@@ -1,0 +1,192 @@
+.place {
+
+  margin-bottom: var(--status-bar-height);
+
+  height: 100rpx;
+}
+
+.page-body {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.nav-left {
+  width: 30%;
+  background-color: #fff;
+  border-right: solid 1px #ECECEC;
+}
+.nav-left-item {
+  height: 100rpx;
+  border-bottom: solid 1px #ECECEC;
+  font-size: 32rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 100rpx;
+}
+.nav-right-scroll {
+  width: 70%;
+  background: #fff;
+  padding: 2%;
+}
+.nav-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+.nav-right-item {
+  width: 46%;
+  /* height: 220upx; */
+  text-align: center;
+  margin-left: 3%;
+  font-size: 28rpx;
+}
+.view_name {
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 60rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.nav-right-item image {
+  width: 100%;
+  height: 254rpx;
+}
+.active {
+  color: #FF4965;
+  background: #fff;
+}
+/* 导航栏 */
+.title_tap {
+  height: 100rpx;
+  line-height: 100rpx;
+  color: white;
+  text-align: center;
+  width: 100%;
+  background-color: #ff4965;
+  font-size: 34rpx;
+}
+/* 禁用滚动条 */
+
+/* // 头部样式 */
+.title {
+  width: calc(100% - 200rpx);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.title .icon {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  color: #a18090;
+  z-index: 996;
+  top: 20rpx;
+  left: 0;
+  font-size: 40rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.search-box {
+  width: 100%;
+  height: 100rpx;
+  background-color: #FF4965;
+  /* padding: 7.5px 2.5%; */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.search-box .title {
+  color: #fff;
+  font-size: 34rpx;
+}
+.search-box .scan {
+  color: white;
+  width: 100rpx;
+  height: 100rpx;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+

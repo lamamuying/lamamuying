@@ -1,0 +1,23 @@
+.video {
+  width: 100%;
+}
+video {
+  width: 100%;
+}
+uni-video {
+  width: 100%;
+}
+.list-item {
+  margin: 20rpx;
+  border-bottom: 2rpx solid #ECECEC;
+}
+.text {
+  color: #868686;
+  font-size: 26rpx;
+  display: inline-block;
+}
+.title {
+  font-size: 30rpx;
+  text-indent: 20rpx;
+}
+

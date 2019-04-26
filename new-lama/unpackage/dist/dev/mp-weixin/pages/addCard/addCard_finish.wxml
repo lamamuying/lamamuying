@@ -1,0 +1,2 @@
+<import src="./addCard_finish.vue.wxml" />
+    <template is="237ae8b9" data="{{ ...$root['0'], $root }}"/>

@@ -1,0 +1,395 @@
+<template>
+	<view>
+		<!-- 状态栏 -->
+		<view class="status" :style="{position:headerPosition}"></view>
+		<view class="header">
+			<view class="icon-item scan arrow-left-mp" @click="navigateBack">
+				<span class="iconfont icon scan" style="font-size: 46upx; color: #fff;">&#xe604;</span>
+			</view>
+			<view class="input">
+				<span class="iconfont icon search" style="font-size: 56upx;">&#xe61a;</span>
+				<input focus :placeholder="defaultKeyword" v-model="keyword" placeholder-class="placeholder-class" />
+			</view>
+			<view class="icon-item" hover-class="none" style="color: #FFFFFF; margin-left:20upx ;"  @tap="doSearch(keyword)">
+				<span class="iconfont" style="font-size: 50upx;">&#xe62d;</span>
+			</view>
+		</view>
+		<!-- 占位符 -->
+		<view class="place"></view>
+		<!-- 历史搜索记录 -->
+		<view class="search-keyword">
+			<scroll-view class="keyword-box" scroll-y>
+				<view class="keyword-block" v-if="oldKeywordList.length>0">
+					<view class="keyword-list-header">
+						<view>历史搜索</view>
+						<view>
+							<image @tap="oldDelete" src="http://static.lamamuying.com/static/images/delete.png"></image>
+						</view>
+					</view>
+					<view class="keyword">
+						<view v-for="key in oldKeywordList" @tap="doSearch(key)" :key="key">{{key}}</view>
+					</view>
+				</view>
+				<!-- 当前热门搜索 -->
+				<!--<view class="keyword-block">
+					<view class="keyword-list-header">
+						<view>热门搜索</view>
+						<view>
+							<image @tap="hotToggle" :src="'../../static/images/search/attention.png'"></image>
+						</view>
+					</view>
+					<view class="keyword" v-if="forbid==''">
+						<view v-for="key in hotKeywordList" @tap="doSearch(key)" :key="key">{{key}}</view>
+					</view>
+					<view class="hide-hot-tis" v-else>
+						<view>当前搜热门搜索已隐藏</view>
+					</view>
+				</view> -->
+			</scroll-view>
+		</view>
+	</view>
+</template>
+
+<script>
+	//引用mSearch组件，如不需要删除即可
+	import mSearch from '@/components/search/mehaotian-search-revision.vue';
+	import twoGoods from '@/components/lama-goods-vue/two-goods.vue';
+	import uniIcon from '@/components/uni-icon.vue';
+	import headerSearch from '@/components/common/header-search.vue';
+	export default {
+		data() {
+			return {
+				headerPosition: "fixed",
+				defaultKeyword: "",
+				keyword: "",
+				oldKeywordList: [],
+				hotKeywordList: [],
+				keywordList: [],
+				forbid: '',
+				isShowKeywordList: true
+			}
+		},
+		onLoad() {
+			this.init();
+		},
+		components: {
+			//引用mSearch组件，如不需要删除即可
+			mSearch,
+			twoGoods,
+			headerSearch,
+			uniIcon
+		},
+		methods: {
+			navigateBack() {
+				uni.navigateBack();
+			},
+			init() {
+				this.loadDefaultKeyword();
+				this.loadOldKeyword();
+				// this.loadHotKeyword();
+
+			},
+			//加载默认搜索关键字
+			loadDefaultKeyword() {
+				//定义默认搜索关键字，可以自己实现ajax请求数据再赋值,用户未输入时，以水印方式显示在输入框，直接不输入内容搜索会搜索默认关键字
+				this.defaultKeyword = "请输入关键字查询";
+			},
+			//加载历史搜索,自动读取本地Storage
+			loadOldKeyword() {
+				uni.getStorage({
+					key: 'searchOldKey',
+					success: (res) => {
+						var OldKeys = JSON.parse(res.data);
+						this.oldKeywordList = OldKeys;
+					}
+				});
+			},
+			//加载热门搜索
+// 			loadHotKeyword() {
+// 				//定义热门搜索关键字，可以自己实现ajax请求数据再赋值
+// 				this.hotKeywordList = ['键盘', '鼠标', '显示器', '电脑主机', '蓝牙音箱', '笔记本电脑', '鼠标垫', 'USB', 'USB3.0'];
+// 			},
+			//顶置关键字
+			setkeyword(data) {
+				this.keyword = data.keyword;
+			},
+			//清除历史搜索
+			oldDelete() {
+				uni.showModal({
+					content: '确定清除历史搜索记录？',
+					success: (res) => {
+						if (res.confirm) {
+							this.oldKeywordList = [];
+							uni.removeStorage({
+								key: 'searchOldKey'
+							});
+						} else if (res.cancel) {
+						}
+					}
+				});
+			},
+			//热门搜索开关
+// 			hotToggle() {
+// 				this.forbid = this.forbid ? '' : '_forbid';
+// 			},
+			//执行搜索
+			doSearch(key) {
+				key = key ? key : this.keyword ? this.keyword : this.defaultKeyword;
+				this.keyword = key;
+				this.saveKeyword(key); //保存为历史 
+				// console.log(this.keyword);
+				// 设置弹出框
+				uni.showToast({
+					title: key,
+					icon: 'none',
+					duration: 2000
+				});
+				uni.navigateTo({
+					url:'../goods/goods_list?keyword=' + key
+				})
+				// :url="'/pages/goods/goods_list?keyword='+keyword"
+// 				//#ifdef APP-PLUS
+// 					plus.runtime.openURL(encodeURI('../goods/goods_list?keyword='+this.keyword));
+// 				//#endif
+			},
+			//保存关键字到历史记录
+			saveKeyword(keyword) {
+				uni.getStorage({
+					key: 'searchOldKey',
+					success: (res) => {
+						// console.log(res.data);
+						var OldKeys = JSON.parse(res.data);
+						var findIndex = OldKeys.indexOf(keyword);
+						if (findIndex == -1) {
+							OldKeys.unshift(keyword);
+						} else {
+							OldKeys.splice(findIndex, 1);
+							OldKeys.unshift(keyword);
+						}
+						//最多10个纪录
+						OldKeys.length > 10 && OldKeys.pop();
+						uni.setStorage({
+							key: 'searchOldKey',
+							data: JSON.stringify(OldKeys)
+						});
+						this.oldKeywordList = OldKeys; //更新历史搜索
+					},
+					fail: (e) => {
+						var OldKeys = [keyword];
+						uni.setStorage({
+							key: 'searchOldKey',
+							data: JSON.stringify(OldKeys)
+						});
+						this.oldKeywordList = OldKeys; //更新历史搜索
+					}
+				});
+			}
+		}
+	}
+</script>
+<style lang="less">
+	// 状态栏
+	.place {
+		/*  #ifdef  APP-PLUS  */
+		margin-top: var(--status-bar-height);
+		/*  #endif  */
+		height: 100upx;
+	}
+
+	/* #ifdef H5 || MP-WEIXIN*/
+	::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+		color: transparent;
+	}
+
+	/*  #endif  */
+	.status {
+		width: 100%;
+		height: 0;
+		/*  #ifdef  APP-PLUS  */
+		height: var(--status-bar-height);
+		/*  #endif  */
+		background-color: #ff4965;
+		position: fixed;
+		top: 0;
+		z-index: 999;
+	}
+
+	// 输入搜索框
+	.header {
+		width: 100%;
+		height: 100upx;
+		background-color: #ff4965;
+		display: flex;
+		position: fixed;
+		top: 0;
+		/*  #ifdef  APP-PLUS  */
+		top: var(--status-bar-height);
+		/*  #endif  */
+		z-index: 996;
+		.arrow-left-mp {
+			/* #ifdef MP-WEIXIN*/
+			width: 0;
+			overflow: hidden;
+			margin-left: 80upx;
+			/* #endif */
+		}
+	}
+
+	.input {
+		width: calc(100% - 200upx);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		input {
+			width: calc(100% - 60upx);
+			height: 60upx;
+			background-color: #ffffff;
+			border-radius: 60upx;
+			padding-left: 60upx;
+			font-size: 30upx;
+
+		}
+
+		.icon {
+			width: 60upx;
+			height: 60upx;
+			position: absolute;
+			color: #a18090;
+			z-index: 996;
+			top: 0;
+			left: 0;
+			font-size: 40upx;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	.search-box .input-box {
+		width: 85%;
+		flex-shrink: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.placeholder-class {
+		color: #9e9e9e;
+	}
+
+	.search-keyword {
+		width: 100%;
+		background-color: rgb(242, 242, 242);
+	}
+
+	.keyword-list-box {
+		// height: calc(100vh - 55px);
+		padding-top: 5px;
+		border-radius: 10px 10px 0 0;
+		background-color: #fff;
+	}
+
+	.keyword-entry-tap {
+		background-color: #eee;
+	}
+
+	.keyword-entry {
+		width: 94%;
+		height: 40px;
+		margin: 0 3%;
+		font-size: 15px;
+		color: #333;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: solid 1px #e7e7e7;
+	}
+
+	.keyword-entry image {
+		width: 30px;
+		height: 30px;
+	}
+
+	.keyword-entry .keyword-text,
+	.keyword-entry .keyword-img {
+		height: 40px;
+		display: flex;
+		align-items: center;
+	}
+
+	.keyword-entry .keyword-text {
+		width: 90%;
+	}
+
+	.keyword-entry .keyword-img {
+		width: 10%;
+		justify-content: center;
+	}
+
+	.keyword-box {
+		height: calc(100vh - 55px);
+		border-radius: 10px 10px 0 0;
+		background-color: #fff;
+	}
+
+	.keyword-box .keyword-block {
+		padding: 5px 0;
+	}
+
+	.keyword-box .keyword-block .keyword-list-header {
+		width: 94%;
+		padding: 5px 3%;
+		font-size: 13.5px;
+		color: #333;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.keyword-box .keyword-block .keyword-list-header image {
+		width: 20px;
+		height: 20px;
+	}
+
+	.keyword-box .keyword-block .keyword {
+		width: 94%;
+		padding: 3px 3%;
+		display: flex;
+		flex-flow: wrap;
+		justify-content: flex-start;
+	}
+
+	.keyword-box .keyword-block .hide-hot-tis {
+		display: flex;
+		justify-content: center;
+		font-size: 14px;
+		color: #6b6b6b;
+	}
+
+	.keyword-box .keyword-block .keyword>view {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 30px;
+		padding: 0 10px;
+		margin: 5px 10px 5px 0;
+		height: 30px;
+		font-size: 14px;
+		background-color: rgb(242, 242, 242);
+		color: #6b6b6b;
+	}
+
+	// 	/* 修改搜索框 */
+	.search-box {
+		background-color: #FF4965;
+
+		.dosearch {
+			color: white;
+			font-size: 40upx;
+			margin-top: 10upx;
+		}
+	}
+</style>

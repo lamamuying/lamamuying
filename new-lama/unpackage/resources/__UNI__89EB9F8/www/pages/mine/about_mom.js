@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"main{background:#fff;width: 100%;height: 100vh;}\n.",[1],"contain{padding:0 ",[0,20],";color:#8f8f94;font-size:",[0,32],";}\nwx-image{width:",[0,700],";height:",[0,360],";padding:",[0,20]," ",[0,26],";}\n",],undefined,{path:"./pages/mine/about_mom.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/mine/about_mom.wxml') } }));

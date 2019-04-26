@@ -1,0 +1,173 @@
+{
+  "@platforms": [
+    "android",
+    "iPhone",
+    "iPad"
+  ],
+  "id": "__UNI__89EB9F8",
+  "name": "辣妈母婴",
+  "version": {
+    "name": "1.0.9",
+    "code": 109
+  },
+  "description": "",
+  "launch_path": "__uniappservice.html",
+  "developer": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "permissions": {
+    "Payment": {},
+    "OAuth": {},
+    "Share": {},
+    "Maps": {
+      "coordType": "gcj02"
+    }
+  },
+  "plus": {
+    "useragent": {
+      "value": "uni-app appservice",
+      "concatenate": true
+    },
+    "splashscreen": {
+      "autoclose": false,
+      "waiting": false,
+      "delay": 0
+    },
+    "popGesture": "close",
+    "launchwebview": {
+      "render": "always"
+    },
+    "statusbar": {
+      "immersed": "supportedDevice",
+      "style": "light",
+      "background": "#ff4965"
+    },
+    "compatible": {
+      "ignoreVersion": true
+    },
+    "distribute": {
+      "icons": {
+        "ios": {
+          "iphone": {
+            "app@2x": "unpackage/res/icons/120x120.png",
+            "app@3x": "unpackage/res/icons/180x180.png",
+            "notification@2x": "unpackage/res/icons/40x40.png",
+            "notification@3x": "unpackage/res/icons/60x60.png",
+            "settings@2x": "unpackage/res/icons/58x58.png",
+            "settings@3x": "unpackage/res/icons/87x87.png",
+            "spotlight@2x": "unpackage/res/icons/80x80.png",
+            "spotlight@3x": "unpackage/res/icons/120x120.png"
+          },
+          "ipad": {
+            "app": "unpackage/res/icons/76x76.png",
+            "app@2x": "unpackage/res/icons/152x152.png",
+            "proapp@2x": "unpackage/res/icons/167x167.png",
+            "notification": "unpackage/res/icons/20x20.png",
+            "notification@2x": "unpackage/res/icons/40x40.png",
+            "settings": "unpackage/res/icons/29x29.png",
+            "settings@2x": "unpackage/res/icons/58x58.png",
+            "spotlight": "unpackage/res/icons/40x40.png",
+            "spotlight@2x": "unpackage/res/icons/80x80.png"
+          },
+          "appstore": "C:/Users/Administrator/Desktop/启动图/11.png"
+        },
+        "android": {
+          "mdpi": "unpackage/res/icons/48x48.png",
+          "ldpi": "unpackage/res/icons/48x48.png",
+          "hdpi": "C:/Users/Administrator/Desktop/启动图/192_192.png",
+          "xxhdpi": "C:/Users/Administrator/Desktop/启动图/384_384.png",
+          "xxxhdpi": "C:/Users/Administrator/Desktop/启动图/512_512.png",
+          "xhdpi": "C:/Users/Administrator/Desktop/启动图/256_256.png"
+        }
+      },
+      "splashscreen": {
+        "ios": {
+          "iphone": {
+            "portrait-896h@3x": "C:/Users/Administrator/Desktop/启动图/icon.png"
+          },
+          "ipad": {
+            "portrait-retina7": "C:/Users/Administrator/Desktop/启动图/icon2.png"
+          }
+        },
+        "android": {
+          "xxhdpi": "C:/Users/Administrator/Desktop/启动图/icon1.png"
+        }
+      },
+      "google": {
+        "permissions": [
+          "<uses-feature android:name=\"android.hardware.camera\"/>",
+          "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+          "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+          "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+          "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+          "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+          "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+          "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+          "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+          "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+          "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+          "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+          "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+        ]
+      },
+      "apple": {},
+      "plugins": {
+        "oauth": {
+          "weixin": {
+            "appid": "wx5f4a94627da9a652",
+            "appsecret": "230c915a45e8d57e125905d8e521e918"
+          }
+        },
+        "payment": {
+          "weixin": {
+            "appid": "wx5f4a94627da9a652"
+          },
+          "alipay": {
+            "scheme": "sss"
+          }
+        },
+        "share": {
+          "weixin": {
+            "appid": "wx5f4a94627da9a652",
+            "appsecret": "230c915a45e8d57e125905d8e521e918"
+          }
+        },
+        "maps": {
+          "amap": {
+            "appkey_ios": "ab6ea3d8990bdf8d32702d67c337921c",
+            "appkey_android": "a000185effcd8f4dcdd91d3d743f8e06"
+          }
+        },
+        "audio": {
+          "mp3": {
+            "description": "Android平台录音支持MP3格式文件"
+          }
+        }
+      }
+    },
+    "allowsInlineMediaPlayback": true,
+    "safearea": {
+      "background": "#F8F8F8",
+      "bottom": {
+        "offset": "auto"
+      }
+    },
+    "uni-app": {
+      "compilerVersion": "1.9.3",
+      "control": "webview"
+    }
+  }
+}

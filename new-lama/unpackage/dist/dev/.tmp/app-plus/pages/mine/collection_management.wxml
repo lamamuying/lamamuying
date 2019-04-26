@@ -1,0 +1,2 @@
+<import src="./collection_management.vue.wxml" />
+    <template is="b4e98e7c" data="{{ ...$root['0'], $root }}"/>

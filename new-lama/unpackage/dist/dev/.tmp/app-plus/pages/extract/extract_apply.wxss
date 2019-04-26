@@ -1,0 +1,25 @@
+page {
+  background-color: #fff;
+}
+.top {
+  margin: 50rpx 50rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.uni-timeline-last-item .uni-timeline-item-divider {
+  background-color: #bbb;
+}
+.uni-timeline-item .addcolor {
+  background-color: #ff4965;
+}
+.uni-timeline-item {
+  padding-bottom: 46rpx;
+}
+.whit {
+  color: gray;
+}
+.btn {
+  width: 80%;
+  color: #fff;
+  background-color: #ff4965;
+}
+

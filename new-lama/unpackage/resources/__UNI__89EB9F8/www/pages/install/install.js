@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"insBorder { border-bottom: ",[0,2]," solid #ececec; line-height: ",[0,100],"; }\n.",[1],"insBorder wx-image { position: absolute; right: ",[0,30],"; width: ",[0,20],"; height: ",[0,24],"; margin-top: ",[0,42],"; }\nwx-uni-view { font-size: ",[0,32],"; }\n.",[1],"btn { width: 70%; margin-top: ",[0,400],"; border-radius: ",[0,40],"; }\n",],undefined,{path:"./pages/install/install.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/install/install.wxml') } }));

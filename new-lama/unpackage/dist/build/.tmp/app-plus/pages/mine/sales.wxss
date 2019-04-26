@@ -1,0 +1,197 @@
+
+.sales {
+	width: 100%;
+	height: auto;
+}
+.sales .head {
+	position: relative;
+	width: 100%;
+	padding: 1rem 0 2rem 0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FF4965), to(#ff677f));
+	background-image: -o-linear-gradient(top, #FF4965, #ff677f);
+	background-image: linear-gradient(to bottom, #FF4965, #ff677f);
+	background-color: #ff8497;
+}
+.sales .head .box {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	    flex: 1;
+	min-width: 0;
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+}
+.sales .head .box .h2 {
+	color: rgba(255, 255, 255, 0.8);
+	font-weight: normal;
+	font-size: 14px;
+	margin-bottom: 2px;
+}
+.sales .head .box .h3 {
+	color: #fff;
+	font-weight: normal;
+	font-size: 32px;
+	margin: 3px 0;
+}
+.sales .head .reg {
+	width: 100%;
+	position: absolute;
+	bottom: -26px;
+}
+.sales .head .reg .reg_btn {
+	width: 90%;
+	background: #fff;
+	border-radius: 50px;
+	color: #ff4965;
+	font-size: 16px;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	padding: 4px 0;
+	-webkit-box-shadow: 0 3px 30px #ffccd4;
+	        box-shadow: 0 3px 30px #ffccd4;
+}
+.sales .list-title {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	    align-items: center;
+	padding: 15px;
+	padding-bottom: 0;
+	margin-top: 26px;
+	position: relative;
+}
+.sales .list-title .h1 {
+	padding-left: 20px;
+	position: relative;
+	font-weight: bold;
+	color: #ff4965;
+	font-size: 16px;
+}
+.sales .list-title .h1:after {
+	content: '';
+	position: absolute;
+	z-index: 0;
+	top: 3px;
+	left: 0;
+	width: 5px;
+	height: 80%;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FF4965), to(#ff677f));
+	background-image: -o-linear-gradient(top, #FF4965, #ff677f);
+	background-image: linear-gradient(to bottom, #FF4965, #ff677f);
+	background-color: #ff677f;
+}
+.sales .list-list {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	    align-items: center;
+	padding: 15px;
+	position: relative;
+	//border-bottom: 1px #ddd solid;
+}
+.sales .b-line:after {
+	content: '';
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid #e2e2e2;
+	-webkit-transform: scaleY(0.5);
+	-ms-transform: scaleY(0.5);
+	    transform: scaleY(0.5);
+	-webkit-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	    transform-origin: 0 100%;
+}
+.sales .list-list .list-logo {
+	width: 45px;
+	height: 45px;
+	margin-right: 0.8rem;
+}
+.sales .list-list .list-logo .img {
+	width: 45px;
+	height: 45px;
+	display: block;
+	border: none;
+	border-radius: 100%;
+}
+.sales .list-list .list-body {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	    flex: 1;
+	min-width: 0;
+	font-size: 14px;
+	color: #333;
+}
+.sales .list-list .list-body .list-text-top {
+	font-size: 16px;
+	font-weight: bold;
+}
+.sales .list-list .list-body .list-text-bottom {
+	color: #9c9c9c;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* 支付弹窗 */
+.submit {
+	position: absolute;
+	bottom: 80rpx;
+	width: 200rpx;
+	line-height: 70rpx;
+	border-radius: 10rpx;
+	background: red;
+	color: #fff;
+	text-align: center;
+}
+.attr-pop-box {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 8;
+	bottom: 0;
+	/* display: none; */
+}
+.attr-pop {
+	width: 92%;
+	padding: 4%;
+	background: #fff;
+	/* background:pink; */
+	position: fixed;
+	z-index: 9;
+	bottom: 0rpx;
+	bottom: calc(100rpx + constant(safe-area-inset-bottom));
+	bottom: calc(100rpx + env(safe-area-inset-bottom));
+	overflow-y: auto;
+}
+.attr-pop .close {
+	position: absolute;
+	width: 48rpx;
+	height: 48rpx;
+	right: 20rpx;
+	overflow: hidden;
+	top: 31.25rpx;
+}
+.attr-pop .close .icon {
+	width: 48rpx;
+	height: 48rpx;
+}
+.btn {
+	width: 40%;
+	background: #ff4965;
+	color: #fff;
+}
+

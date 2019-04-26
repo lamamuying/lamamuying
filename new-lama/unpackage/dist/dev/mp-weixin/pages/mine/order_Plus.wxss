@@ -1,0 +1,36 @@
+.content {
+  height: 100vh;
+  padding: 30rpx;
+}
+.content .code {
+  height: 350rpx;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 32rpx;
+  padding: 30rpx;
+}
+.content .plus {
+  font-size: 40rpx;
+}
+.content .adress {
+  margin-top: 20rpx;
+  font-size: 31rpx;
+}
+.content .clicc {
+  margin-top: 30rpx;
+  color: #ff4965;
+}
+.content .cli {
+  font-size: 40rpx;
+  margin-top: 50rpx;
+  text-align: center;
+}
+

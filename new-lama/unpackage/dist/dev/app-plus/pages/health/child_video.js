@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"video { width: 100%; }\nwx-video { width: 100%; }\nwx-uni-video { width: 100%; }\n.",[1],"list-item { margin: ",[0,20],"; border-bottom: ",[0,2]," solid #ECECEC; }\n.",[1],"text { color: #868686; font-size: ",[0,26],"; display: inline-block; }\n.",[1],"title { font-size: ",[0,30],"; text-indent: ",[0,20],"; }\n",],undefined,{path:"./pages/health/child_video.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/health/child_video.wxml') } }));

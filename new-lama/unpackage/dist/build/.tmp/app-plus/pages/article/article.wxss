@@ -1,0 +1,218 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 滚动条 修改样式*/
+
+
+.uni-tab-bar{
+	background: #fff;
+}
+.uni-tab-bar .active {
+	color: #FF4965;
+	border-bottom: 4rpx solid #FF4965;
+}
+.uni-swiper-tab {
+	border: none;
+}
+/* 渲染页面样式 */
+.uni-tab-bar .list {
+	width: 100%;
+}
+.inf_news {
+	width: 98%;
+	height:200rpx;
+	color: #393939;
+}
+.mui-table-view {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+	background-color: #fff;
+}
+

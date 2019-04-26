@@ -1,0 +1,296 @@
+
+.uni-numbox {
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	height: 56rpx;
+	position: relative;
+}
+.uni-numbox::after {
+	content: '';
+	position: absolute;
+	-webkit-transform-origin: center;
+	    -ms-transform-origin: center;
+	        transform-origin: center;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	pointer-events: none;
+	top: -50%;
+	left: -50%;
+	right: -50%;
+	bottom: -50%;
+	border: 1px solid #c8c7cc;
+	-webkit-transform: scale(.5);
+	    -ms-transform: scale(.5);
+	        transform: scale(.5);
+}
+.uni-numbox-minus,
+.uni-numbox-plus {
+	margin: 0;
+	background-color: #f9f9f9;
+	width: 64rpx;
+	height: 100%;
+	line-height: 56rpx;
+	text-align: center;
+	color: #555555;
+	position: relative;
+}
+.uni-numbox-minus {
+	border-right: none;
+	border-top-left-radius: 6rpx;
+	border-bottom-left-radius: 6rpx;
+}
+.uni-numbox-plus {
+	border-left: none;
+	border-top-right-radius: 6rpx;
+	border-bottom-right-radius: 6rpx;
+}
+.uni-numbox-value {
+	position: relative;
+	background-color: #ffffff;
+	width: 64rpx;
+	height: 100%;
+	text-align: center;
+	padding: 0;
+}
+.uni-numbox-value::after {
+	content: '';
+	position: absolute;
+	-webkit-transform-origin: center;
+	    -ms-transform-origin: center;
+	        transform-origin: center;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	pointer-events: none;
+	top: -50%;
+	left: -50%;
+	right: -50%;
+	bottom: -50%;
+	border-style: solid;
+	border-color: #cccccc;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-top-width: 0;
+	border-bottom-width: 0;
+	-webkit-transform: scale(.5);
+	    -ms-transform: scale(.5);
+	        transform: scale(.5);
+}
+.uni-numbox-disabled {
+	color: #c0c0c0;
+}
+
+.firm_order .order_adree {
+  padding: 30rpx 50rpx 0 0;
+  height: 60rpx;
+  line-height: 60rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 36rpx;
+}
+.firm_order .firm_icon {
+  color: #64676F;
+}
+.firm_order .firm_icon image {
+  width: 7%;
+  height: 46rpx;
+  vertical-align: top;
+  margin-right: 2%;
+}
+.firm_order .hr {
+  padding-bottom: 0.93%;
+  position: relative;
+  margin-top: 20rpx;
+}
+.firm_order .hr image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.order_goods {
+  background-color: #FFFFFF;
+}
+.order_goods .order_store {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60rpx;
+  font-size: 24rpx;
+  color: #8a8a8a;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.order_goods .uni-media-list-body {
+  height: auto;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.order_goods .uni-media-list-text-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.Ocolor {
+  color: #8f8f94;
+}
+.attrs {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+}
+.attrs .num {
+  line-height: 50px;
+}
+.words {
+  background-color: #fff;
+}
+.words .words_top {
+  height: 100rpx;
+  border-bottom: 1px solid #ececec;
+  padding-left: 20rpx;
+  font-size: 34rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.words .words_top .words_ps {
+  text-align: right;
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 70%;
+  margin-right: 20rpx;
+}
+.words .words_foot {
+  padding: 0 50rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.uni-media-list-logo {
+  width: 200rpx;
+  height: 160rpx;
+}
+.uni_firm {
+  width: 35%;
+  height: 220rpx;
+  margin-right: 9px;
+}
+.uni-list {
+  border-top: 1px solid #ececec;
+}
+.firm_title {
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.img_icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 11rpx;
+}
+.bottom {
+  background-color: #fff;
+  text-align: center;
+  font-size: 32rpx;
+  padding: 30rpx;
+}
+.order_pay {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 96rpx;
+  background: #fafafa;
+  bottom: 0;
+
+  font-size: 24rpx;
+  color: #333;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+  z-index: 1111;
+}
+.order_pay .chose-all {
+  width: 20%;
+  margin-left: 6%;
+  font-size: 30rpx;
+}
+.order_pay .price {
+  width: 40%;
+  font-size: 32rpx;
+  color: #ff4965;
+  text-align: right;
+  margin-right: 3%;
+  font-weight: bold;
+}
+.order_pay .submit {
+  width: 35%;
+}
+.order_pay .submit .btn {
+  width: 100%;
+  height: 96rpx;
+  background: #ff4965;
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: bold;
+  text-align: center;
+  line-height: 96rpx;
+  border-radius: 0;
+}
+
